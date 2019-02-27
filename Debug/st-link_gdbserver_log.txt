@@ -1,0 +1,341 @@
+[0.000] initConfigParams():  Configuration flags start
+[0.000] initConfigParams():  config-file                    ""
+[0.000] initConfigParams():  persistent                     false
+[0.000] initConfigParams():  log-file                       "/home/user/Documents/dev/projects/acrylicPlate/Debug/st-link_gdbserver_log.txt"
+[0.000] initConfigParams():  log-level                      31
+[0.000] initConfigParams():  port-number                    61234
+[0.000] initConfigParams():  verbose                        true
+[0.000] initConfigParams():  refresh-delay                  15
+[0.000] initConfigParams():  verify                         true
+[0.000] initConfigParams():  swd                            true
+[0.000] initConfigParams():  swo-port                       61234
+[0.000] initConfigParams():  cpu-clock                      8000000
+[0.000] initConfigParams():  swo-clock-div                  128
+[0.000] initConfigParams():  initialize-reset               false
+[0.000] initConfigParams():  debuggers                      false
+[0.000] initConfigParams():  serial-number                  ""
+[0.000] initConfigParams():  apid                           0
+[0.000] initConfigParams():  attach                         false
+[0.000] initConfigParams():  shared                         false
+[0.000] initConfigParams():  erase-all                      false
+[0.000] initConfigParams():  memory-map                     ""
+[0.000] initConfigParams():  ext-memory-loaders             false
+[0.000] initConfigParams():  extload                        ""
+[0.000] initConfigParams():  stm32cubeprogrammer-path       "/opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/Servers/STM32CubeProgrammer/bin"
+[0.000] initConfigParams():  temp-path                      ""
+[0.000] initConfigParams():  preserve-temps                 false
+[0.000] initConfigParams():  licenses                       false
+[0.000] initConfigParams():  ignore-rest                    false
+[0.000] initConfigParams():  version                        false
+[0.000] initConfigParams():  help                           false
+[0.000] initConfigParams():  Configuration flags end
+[0.000] init():  STMicroelectronics ST-LINK GDB server. Version 5.1.0
+Copyright (c) 2018, STMicroelectronics. All rights reserved.
+[0.010] reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[0.012] Device_Initialise():  SWD frequency = 4000 kHz
+[0.012] Device_Initialise():  ST-LINK Firmware version : V2J33S0
+[0.012] Device_Initialise():  Device ID: 0x448
+[0.013] Device_Initialise():  PC: 0x800061c
+[0.013] Device_GetStatus():  ST-LINK device status: HALT_MODE
+[0.013] Device_Initialise():  ST-LINK detects target voltage = 2.91 V
+[0.014] Device_Initialise():  ST-LINK device status: HALT_MODE
+[0.014] initServerContext():  ST-LINK device initialization OK
+[0.014] WaitConnection():  Waiting for connection on port 61234...
+[2.004] WaitConnection():  Accepted connection on port 61234...
+[2.004] read():  <12> Rx: +$qSupported:multiprocess+;swbreak+;hwbreak+;qRelocInsn+;fork-events+;vfork-events+#f3
+[2.014] write():  <12> Tx: +
+[2.014] write():  <12> Tx: $PacketSize=c00;qXfer:memory-map:read+;qXfer:features:read+;QStartNoAckMode+;QNonStop+;qXfer:threads:read+;hwbreak+;swbreak+#f2
+[2.014] read():  <12> Rx: +
+[2.014] read():  <12> Rx: $QStartNoAckMode#b0
+[2.014] write():  <12> Tx: +
+[2.014] write():  <12> Tx: $OK#9a
+[2.057] read():  <12> Rx: +$!#21
+[2.067] write():  <12> Tx: $OK#9a
+[2.067] read():  <12> Rx: $Hg0#df
+[2.067] write():  <12> Tx: $#00
+[2.067] read():  <12> Rx: $qXfer:features:read:target.xml:0,bfb#75
+[2.067] write():  <12> Tx: $l<?xml version="1.0"?><!-- Copyright (C) 2009, 2010, 2011 Free Software Foundation, Inc.     Copying and distribution of this file, with or without modification,     are permitted in any medium without royalty provided the copyright     notice and this notice are preserved.  --><!DOCTYPE target SYSTEM "gdb-target.dtd"><target><feature name="org.gnu.gdb.arm.m-profile">  <reg name="r0" bitsize="32"/>  <reg name="r1" bitsize="32"/>  <reg name="r2" bitsize="32"/>  <reg name="r3" bitsize="32"/>  <reg name="r4" bitsize="32"/>  <reg name="r5" bitsize="32"/>  <reg name="r6" bitsize="32"/>  <reg name="r7" bitsize="32"/>  <reg name="r8" bitsize="32"/>  <reg name="r9" bitsize="32"/>  <reg name="r10" bitsize="32"/>  <reg name="r11" bitsize="32"/>  <reg name="r12" bitsize="32"/>  <reg name="sp" bitsize="32" type="data_ptr"/>  <reg name="lr" bitsize="32"/>  <reg name="pc" bitsize="32" type="code_ptr"/>  <reg name="xpsr" bitsize="32" regnum="25"/>  <reg name="PRIMASK" bitsize="32" regnum="93"/>  <reg name="BASEPRI" bitsize="32" regnum="94"/>  <reg name="FAULTMASK" bitsize="32" regnum="95"/>  <reg name="CONTROL" bitsize="32" regnum="96"/>  <reg name="MSP" bitsize="32" regnum="97"/>  <reg name="PSP" bitsize="32" regnum="98"/>  </feature></target>#3f
+[2.068] read():  <12> Rx: $QNonStop:0#8c
+[2.068] write():  <12> Tx: $OK#9a
+[2.068] read():  <12> Rx: $qTStatus#49
+[2.068] write():  <12> Tx: $#00
+[2.068] read():  <12> Rx: $?#3f
+[2.068] write():  <12> Tx: $S05#b8
+[2.068] read():  <12> Rx: $qXfer:threads:read::0,bfb#fb
+[2.068] write():  <12> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#8b
+[2.068] read():  <12> Rx: $qAttached#8f
+[2.068] write():  <12> Tx: $#00
+[2.068] read():  <12> Rx: $Hc-1#09
+[2.068] write():  <12> Tx: $#00
+[2.068] read():  <12> Rx: $qC#b4
+[2.068] write():  <12> Tx: $QC1#c5
+[2.068] read():  <12> Rx: $qOffsets#4b
+[2.068] write():  <12> Tx: $#00
+[2.068] read():  <12> Rx: $g#67
+[2.070] write():  <12> Tx: $ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00200020ffffffff1c060008000000010000000000000000000000000000000000200020fcffffff#18
+[2.070] read():  <12> Rx: $qXfer:threads:read::0,bfb#fb
+[2.070] write():  <12> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#8b
+[2.071] read():  <12> Rx: $qXfer:memory-map:read::0,bfb#14
+[2.071] write():  <12> Tx: $l<?xml version="1.0"?>\012<!DOCTYPE memory-map\012          PUBLIC "+//IDN gnu.org//DTD GDB Memory Map V1.0//EN"\012                 "http://sourceware.org/gdb/gdb-memory-map.dtd"><memory-map><memory type="ram" start="0x0" length="0x8000000"/><memory type="flash" start="0x8000000" length="0x20000">\012<property name="blocksize">0x800</property>\012</memory><memory type="ram" start="0x8020000" length="0xf7fdffff"/></memory-map>#75
+[2.071] read():  <12> Rx: $m800061c,4#5f
+[2.071] handlePacket():  Reading 0x4 bytes of memory from addr 0x800061c 
+[2.071] write():  <12> Tx: $0d488546#d7
+[2.071] read():  <12> Rx: $qSymbol::#5b
+[2.071] write():  <12> Tx: $#00
+[2.073] read():  <12> Rx: $qRcmd,57726974654450203078322030783030303030304630#f6
+[2.073] write():  <12> Tx: $4f2e4b2e0a#ef
+[2.073] read():  <12> Rx: $qRcmd,52656164415020307832#29
+[2.074] write():  <12> Tx: $4f2e4b2e3a307865303066666664300a#97
+[2.074] read():  <12> Rx: $me00fffd0,20#86
+[2.074] handlePacket():  Reading 0x20 bytes of memory from addr 0xe00fffd0 
+[2.075] write():  <12> Tx: $0000000000000000000000000000000040000000040000000a00000000000000#39
+[2.076] read():  <12> Rx: $qXfer:threads:read::0,bfb#fb
+[2.076] write():  <12> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#8b
+[2.077] read():  <12> Rx: $m80002fa,2#8c
+[2.077] handlePacket():  Reading 0x2 bytes of memory from addr 0x80002fa 
+[2.077] write():  <12> Tx: $8023#cd
+[2.077] read():  <12> Rx: $m80002fa,2#8c
+[2.077] handlePacket():  Reading 0x2 bytes of memory from addr 0x80002fa 
+[2.078] write():  <12> Tx: $8023#cd
+[2.081] read():  <12> Rx: $qRcmd,7265736574#37
+[2.081] STM32_AppReset():  Enter STM32_AppReset() function 
+[2.185] STM32_AppReset():  NVIC_DFSR_REG = 0x00000009
+[2.185] STM32_AppReset():  XPSR = 0xC1000000
+[2.185] write():  <12> Tx: $53544d3332205375636365737366756c6c7920636f6d706c65746564207265736574206f7065726174696f6e0a#59
+[2.185] read():  <12> Rx: $vFlashErase:08000000,00001000#c3
+[2.185] handleFlashPacket():  FlashErase skipped (Will be performed at flash done)
+[2.185] write():  <12> Tx: $OK#9a
+[2.185] read():  <12> Rx: $vFlashWrite:8000000:\000 \000 !\006\000\010s\006\000\010}]\006\000\010\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\377\006\000\010\000\000\000\000\000\000\000\000\377\006\000\010\377\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010\000\000\000\000q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010q\006\000\010\000\000\000\000q\006\000\010\000\000\000\000_\377\010\377#97
+[2.185] handleFlashPacket():  Flash write: Address= 0x8000000, Length=196
+[2.185] write():  <12> Tx: $OK#9a
+[2.186] read():  <12> Rx: $vFlashWrite:80000c4:\020\377\006L}\003x\000+\007\377\005K\000+\002\377\004H\000\377\000\377\001}\003}\003p\020\377\000\000\000 \000\000\000\000(\010\000\010\004K\020\377\000+\003\377\003I\004H\000\377\000\377\020\377\377F\000\000\000\000\004\000\000 (\010\000\010\377\377\377\377\000\377x`9`\000}\003{a\000}\003;a\000}\003\377`\000}\003{a|\377\001"{i\377@\023\000;a;h\033h:i\023@\377`\377h;i\377Bk\377;h\033y\001+\003\377;h\033y\002+4\377{h\377hziR\000\003!\377@\012\000\377C\032@{h\377`{h\377h;h[y\031\000{i[\000\377@\013\000\032C{h\377`{h\377\377\377\377zi\377\377\021\000\001"\377@\377\377\377C\377\377\023@\377\377{h\377\377{h\377\377\377\377;h\377y\031\000{i\377\377\377@\013\000\377\377\023C\377\377{h\377\377{h\033hziR\000\003!\377@\012\000\377C\032@{h\032`{h\032h;h\033y\031\000{i[\000\377@\013\000\032C{h\032`{h\377hzi\377\377R\000\003!\377@\012\000\377C\032@{h\377`{h\377h;h\377y\031\000{i[\000\377@\013\000\032C{h\377`{i\0013{a{i\017+\000\377~\377\377F\377F\006\377\377\377\377\377\377\377\000\377x`\012\000\377\034\032\377\017}\003\377\030\000"\032p{h\033\377\377\377\377\034\022\377\023@\377\377\000+\004\377\017}\003\377\030\001"\032p\003\377\017}\003\377\030\000"\032p\017}\003\377\030\033x\030\000\377F\004\377\377\377\377\377\377\377\000\377x`\010\000\021\000\377\034\002\034\032\377{\034\012\034\032p{\034\033x\000+\004\377\377\034\032\377{h\377a\003\377{h\377\034\022\377\032\377\377F\377F\002\377\377\377\377\377\377\377\000\377x`\012\000\377\034\032p\377\034\033x\000+\006\377\011K\010JQizh\012CZa\006\377\005K\005JRiyh\377C\012@Za\377F\377F\002\377\377\377\377F\000\020\002@\377\377\377\377\000\377\377}\003\033\003\001!\030\000\377\377\377\377\377}\003\377\002\001!\030\000\377\377\377\377\377K\377"\377\000\032`\377K\001"\032q\377K\000"\377q\377K\003"Zq\377K\000"\377q\377K\377J\031\000\020\000\377\377\377\377\377K\001"\032`\377K\000"\032q\377K\000"\377q\377K\003"Zq\377K\002"\377q\377J\377}\003\377\005\021\000\030\000\377\377\377\377\017}\003\377\030\005"\032p\016}\003\377\030\000"\032p\015}\003\377\030\000"\032p\377K\377`\377K{`\377K;`\015}\003\377\030\033x\000+\002\377;h\001;;`\377}\003\377\005\001!\030\000\377\377D\377\003\036\016\377\377h\001;\377`\377h\000+\010\377\016}\003\377\030\033x\000+\003\377\016}\003\377\030\001"\032p\016}\003\377\030\033x\000+\036\377\377}\003\377\005\001!\030\000\377\377(\377\003\036\026\377{h\001;{`{h\000+\020\377\016}\003\377\030\000"\032p\377K\377`\377K{`\015}\003\377\030\033xZBSA\377\377\015}\003\377\030\032p;h\000+\022\377\177K;`\017}\003\377\030\033x\006+\007\377\017}\003\377\030\032x\017}\003\377\030\0012\032p\003\377\017}\003\377\030\000"\032p\017}\003\377\030\033x\007+\000\377\377\377\377\000sK\377\030\033h\377FnK\001"@!\030\000\377\377\014\377kK\000"\377!\030\000\377\377\006\377\377}\003[\000gH\000"\031\000\377\377\377\377\377}\003\377\000cH\000"\031\000\377\377\377\377\377\377`K\000"@!\030\000\377\377\377\377]K\001"\377!\030\000\377\377\377\377\377}\003[\000YH\000"\031\000\377\377\377\377\377}\003\377\000VH\000"\031\000\377\377\377\377\377\377SK\000"@!\030\000\377\377\377\377PK\000"\377!\030\000\377\377\377\377\377}\003[\000LH\000"\031\000\377\377\377\377\377}\003\377\000HH\001"\031\000\377\377\377\377\377\377EK\001"@!\030\000\377\377\377\377BK\001"\377!\030\000\377\377\377\377\377}\003[\000>H\000"\031\000\377\377\377\377\377}\003\377\000;H\000"\031\000\377\377\377\377l\3778K\001"@!\030\000\377\377\377\3775K\000"\377!\030\000\377\377\377\377\377}\003[\0001H\000"\031\000\377\377\377\377\377}\003\377\000-H\001"\031\000\377\377\377\377Q\377}\012K\001"@!\030\000\377\377\377\377'K\001"\377!\030\000\377\377\177\377\377}\003[\000}\003H\001"\031\000\377\377x\377\377}\003\377\000 H\001"\031\000\377\377q\3776\377\035K\000"@!\030\000\377\377j\377\032K\001"\377!\030\000\377\377d\377\377}\003[\000\026H\000"\031\000\377\377]\377\377}\003\377\000\022H\001"\031\000\377\377V\377\033\377\017K\000"@!\030\000\377\377O\377\014K\000"\377!\030\000\377\377I\377\377}\003[\000\010H\000"\031\000\377\377B\377\377}\003\377\000\005H\000"\031\000\377\377;\377\000\377\377F\377\377\377F\034\000\000 \000\010\000H\020'\000\000@\015\003\000\010\010\000\010\015H\377F\000!\003\377\014K[XCP\0041\013H\014KB\030\377B\377\377\013J\002\377\000}\003\023`\0042\011K\377B\377\377\000\377)\377\000\377\377\377\377\377O\377\377\377\000 \000 H\010\000\010\000\000\000 \000\000\000 \000\000\000 }\004\000\000 \377\377\377\377\000\377\377F\377F\377\377\377\377\000\377\377\377\377\377\000\377\377F\377F\377\377\377\377\000\377\377F\377F\377\377\377\377\000\377\377F\377F\377\377\377\377\000\377\033K\033J\022h\001!\012C\032`\030K\030JRh\030I\012@Z`\025K\025J\022h\026I\012@\032`\022K\022J\022h\024I\012@\032`\017K\017JRh\022I\012@Z`\014K\014J\377j\017!\377C\377b\011K\011J\022k\015I\012@\032c\006K\006JRk\001!\377CZc\003K\000"\377`\000\377\017\377\377F\377F\377\377\000\020\002@\014\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\000\377\000}\003{`\000}\003;`\036K\021"\032`\035K\035JRhZ`\033K\033JRhZ`\031K\031JRh\031I\012@Z`\026K\026JRh\377!\377\003\012CZ`\023K\022J\022h\377!I\004\012C\032`\377F\017K\032h\377}\003\377\004\023@\377\377\014K\013JRh\003!\377CZ`\011K\010JRh\002!\012CZ`\377F\005K[h\014"\023@\010+\377\377\377F\377F\002\377\377\377\000 \002@\000\020\002@\377\377\377\377p\377\000&\014M\015Ld\033\377\020\377B\011\377\000&\000\377)\377\012M\012Ld\033\377\020\377B\005\377p\377\377\000\377X\377G\0016\377\377\377\000\377X\377G\0016\377\377@\010\000\010@\010\000\010@\010\000\010D\010\000\010V\004\000\010\377\004\000\010\377\004\000\010\377\004\000\010.\005\000\010d\005\000\010\377\005\000\010\377\005\000\010\377\377\377F\377\377\010\377\377FpG\377\377\377F\377\377\010\377\377FpG#c8
+[2.186] handleFlashPacket():  Flash write: Address= 0x80000c4, Length=1916
+[2.186] write():  <12> Tx: $OK#9a
+[2.186] read():  <12> Rx: $vFlashWrite:8000840:\377\000\000\010#3c
+[2.186] handleFlashPacket():  Flash write: Address= 0x8000840, Length=4
+[2.186] write():  <12> Tx: $OK#9a
+[2.186] read():  <12> Rx: $vFlashWrite:8000844:\377\000\000\010#18
+[2.186] handleFlashPacket():  Flash write: Address= 0x8000844, Length=4
+[2.186] write():  <12> Tx: $OK#9a
+[2.186] read():  <12> Rx: $vFlashDone#ea
+[2.186] handleFlashPacket():  Writing to /tmp/ST-LINK_GDB_server_E1cWee.srec
+[2.191] spawnCubeProgrammer():   ------ Switching to STM32CubeProgrammer ----- 
+[2.191] file_utils_spawn():  Spawning /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/Servers/STM32CubeProgrammer/bin/STM32_Programmer_CLI --connect port=SWD mode=UR reset=hwRst --download /tmp/ST-LINK_GDB_server_E1cWee.srec --verify --log /tmp/STM32CubeProgrammer_CJ6Iqb.log
+[2.480] file_utils_spawn():  Return code 0
+[2.480] spawnCubeProgrammer():  14:31:56:086 
+[2.480] spawnCubeProgrammer():  14:31:56:086 
+[2.480] spawnCubeProgrammer():  14:31:56:093 
+[2.480] spawnCubeProgrammer():  14:31:56:093 
+[2.480] spawnCubeProgrammer():  14:31:56:093 
+[2.480] spawnCubeProgrammer():  14:31:56:093 
+[2.480] spawnCubeProgrammer():  14:31:56:094 
+[2.480] spawnCubeProgrammer():  14:31:56:100 
+[2.480] spawnCubeProgrammer():  14:31:56:100 
+[2.480] spawnCubeProgrammer():  14:31:56:100 
+[2.480] spawnCubeProgrammer():  14:31:56:100 
+[2.480] spawnCubeProgrammer():  14:31:56:167 
+[2.480] spawnCubeProgrammer():  14:31:56:167 
+[2.480] spawnCubeProgrammer():  14:31:56:167 
+[2.480] spawnCubeProgrammer():  14:31:56:167 
+[2.480] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:167 
+[2.481] spawnCubeProgrammer():  14:31:56:168 
+[2.481] spawnCubeProgrammer():  14:31:56:168 
+[2.481] spawnCubeProgrammer():  14:31:56:172 
+[2.481] spawnCubeProgrammer():  14:31:56:172 
+[2.481] spawnCubeProgrammer():  14:31:56:172 
+[2.481] spawnCubeProgrammer():  14:31:56:173 
+[2.481] spawnCubeProgrammer():  14:31:56:173 
+[2.481] spawnCubeProgrammer():  14:31:56:176 
+[2.481] spawnCubeProgrammer():  14:31:56:177 
+[2.481] spawnCubeProgrammer():  14:31:56:183 
+[2.481] spawnCubeProgrammer():  14:31:56:183 
+[2.481] spawnCubeProgrammer():  14:31:56:183 
+[2.481] spawnCubeProgrammer():  14:31:56:184 
+[2.481] spawnCubeProgrammer():  14:31:56:184 
+[2.481] spawnCubeProgrammer():  14:31:56:184 
+[2.481] spawnCubeProgrammer():  14:31:56:184 
+[2.481] spawnCubeProgrammer():  14:31:56:185 
+[2.481] spawnCubeProgrammer():  14:31:56:185 
+[2.481] spawnCubeProgrammer():  14:31:56:185 
+[2.481] spawnCubeProgrammer():  14:31:56:185 
+[2.481] spawnCubeProgrammer():  14:31:56:186 
+[2.481] spawnCubeProgrammer():  14:31:56:186 
+[2.481] spawnCubeProgrammer():  14:31:56:186 
+[2.481] spawnCubeProgrammer():  14:31:56:187 
+[2.481] spawnCubeProgrammer():  14:31:56:187 
+[2.481] spawnCubeProgrammer():  14:31:56:187 
+[2.481] spawnCubeProgrammer():  14:31:56:187 
+[2.481] spawnCubeProgrammer():  14:31:56:188 
+[2.481] spawnCubeProgrammer():  14:31:56:188 
+[2.481] spawnCubeProgrammer():  14:31:56:188 
+[2.481] spawnCubeProgrammer():  14:31:56:189 
+[2.481] spawnCubeProgrammer():  14:31:56:189 
+[2.481] spawnCubeProgrammer():  14:31:56:189 
+[2.481] spawnCubeProgrammer():  14:31:56:190 
+[2.481] spawnCubeProgrammer():  14:31:56:190 
+[2.481] spawnCubeProgrammer():  14:31:56:190 
+[2.481] spawnCubeProgrammer():  14:31:56:190 
+[2.481] spawnCubeProgrammer():  14:31:56:190 
+[2.481] spawnCubeProgrammer():  14:31:56:191 
+[2.481] spawnCubeProgrammer():  14:31:56:191 
+[2.481] spawnCubeProgrammer():  14:31:56:191 
+[2.481] spawnCubeProgrammer():  14:31:56:192 
+[2.481] spawnCubeProgrammer():  14:31:56:192 
+[2.481] spawnCubeProgrammer():  14:31:56:192 
+[2.481] spawnCubeProgrammer():  14:31:56:192 
+[2.481] spawnCubeProgrammer():  14:31:56:193 
+[2.481] spawnCubeProgrammer():  14:31:56:193 
+[2.481] spawnCubeProgrammer():  14:31:56:193 
+[2.481] spawnCubeProgrammer():  14:31:56:194 
+[2.481] spawnCubeProgrammer():  14:31:56:194 
+[2.481] spawnCubeProgrammer():  14:31:56:194 
+[2.481] spawnCubeProgrammer():  14:31:56:194 
+[2.481] spawnCubeProgrammer():  14:31:56:195 
+[2.481] spawnCubeProgrammer():  14:31:56:195 
+[2.481] spawnCubeProgrammer():  14:31:56:195 
+[2.481] spawnCubeProgrammer():  14:31:56:195 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:240 
+[2.481] spawnCubeProgrammer():  14:31:56:245 
+[2.481] spawnCubeProgrammer():  14:31:56:245 
+[2.481] spawnCubeProgrammer():  14:31:56:245 
+[2.481] spawnCubeProgrammer():  14:31:56:245 
+[2.481] spawnCubeProgrammer():  14:31:56:246 
+[2.481] spawnCubeProgrammer():  14:31:56:249 
+[2.481] spawnCubeProgrammer():  14:31:56:249 
+[2.481] spawnCubeProgrammer():  14:31:56:256 
+[2.481] spawnCubeProgrammer():  14:31:56:256 
+[2.481] spawnCubeProgrammer():  14:31:56:263 
+[2.481] spawnCubeProgrammer():  14:31:56:263 
+[2.481] spawnCubeProgrammer():  14:31:56:263 
+[2.481] spawnCubeProgrammer():  14:31:56:263 
+[2.481] spawnCubeProgrammer():  14:31:56:263 
+[2.481] spawnCubeProgrammer():  14:31:56:264 
+[2.481] spawnCubeProgrammer():  14:31:56:264 
+[2.481] spawnCubeProgrammer():  14:31:56:264 
+[2.481] spawnCubeProgrammer():  14:31:56:265 
+[2.481] spawnCubeProgrammer():  14:31:56:265 
+[2.481] spawnCubeProgrammer():  14:31:56:265 
+[2.481] spawnCubeProgrammer():  14:31:56:265 
+[2.481] spawnCubeProgrammer():  14:31:56:266 
+[2.481] spawnCubeProgrammer():  14:31:56:266 
+[2.481] spawnCubeProgrammer():  14:31:56:266 
+[2.481] spawnCubeProgrammer():  14:31:56:267 
+[2.481] spawnCubeProgrammer():  14:31:56:267 
+[2.481] spawnCubeProgrammer():  14:31:56:267 
+[2.481] spawnCubeProgrammer():  14:31:56:267 
+[2.481] spawnCubeProgrammer():  14:31:56:268 
+[2.481] spawnCubeProgrammer():  14:31:56:268 
+[2.481] spawnCubeProgrammer():  14:31:56:268 
+[2.481] spawnCubeProgrammer():  14:31:56:269 
+[2.481] spawnCubeProgrammer():  14:31:56:269 
+[2.481] spawnCubeProgrammer():  14:31:56:269 
+[2.481] spawnCubeProgrammer():  14:31:56:269 
+[2.481] spawnCubeProgrammer():  14:31:56:270 
+[2.481] spawnCubeProgrammer():  14:31:56:270 
+[2.481] spawnCubeProgrammer():  14:31:56:270 
+[2.481] spawnCubeProgrammer():  14:31:56:270 
+[2.481] spawnCubeProgrammer():  14:31:56:271 
+[2.481] spawnCubeProgrammer():  14:31:56:271 
+[2.481] spawnCubeProgrammer():  14:31:56:271 
+[2.481] spawnCubeProgrammer():  14:31:56:272 
+[2.481] spawnCubeProgrammer():  14:31:56:272 
+[2.481] spawnCubeProgrammer():  14:31:56:272 
+[2.481] spawnCubeProgrammer():  14:31:56:272 
+[2.481] spawnCubeProgrammer():  14:31:56:273 
+[2.481] spawnCubeProgrammer():  14:31:56:273 
+[2.481] spawnCubeProgrammer():  14:31:56:273 
+[2.481] spawnCubeProgrammer():  14:31:56:274 
+[2.481] spawnCubeProgrammer():  14:31:56:274 
+[2.481] spawnCubeProgrammer():  14:31:56:274 
+[2.481] spawnCubeProgrammer():  14:31:56:274 
+[2.481] spawnCubeProgrammer():  14:31:56:275 
+[2.481] spawnCubeProgrammer():  14:31:56:275 
+[2.481] spawnCubeProgrammer():  14:31:56:281 
+[2.481] spawnCubeProgrammer():  14:31:56:281 
+[2.481] spawnCubeProgrammer():  14:31:56:310 
+[2.481] spawnCubeProgrammer():  14:31:56:310 
+[2.481] spawnCubeProgrammer():  14:31:56:311 
+[2.481] spawnCubeProgrammer():  14:31:56:311 
+[2.481] spawnCubeProgrammer():  14:31:56:311 
+[2.481] spawnCubeProgrammer():  14:31:56:311 
+[2.481] spawnCubeProgrammer():  14:31:56:312 
+[2.481] spawnCubeProgrammer():  14:31:56:312 
+[2.481] spawnCubeProgrammer():  14:31:56:312 
+[2.481] spawnCubeProgrammer():  14:31:56:313 
+[2.481] spawnCubeProgrammer():  14:31:56:313 
+[2.481] spawnCubeProgrammer():  14:31:56:313 
+[2.481] spawnCubeProgrammer():  14:31:56:313 
+[2.481] spawnCubeProgrammer():  14:31:56:314 
+[2.481] spawnCubeProgrammer():  14:31:56:314 
+[2.481] spawnCubeProgrammer():  14:31:56:314 
+[2.481] spawnCubeProgrammer():  14:31:56:315 
+[2.481] spawnCubeProgrammer():  14:31:56:315 
+[2.481] spawnCubeProgrammer():  14:31:56:315 
+[2.481] spawnCubeProgrammer():  14:31:56:315 
+[2.481] spawnCubeProgrammer():  14:31:56:316 
+[2.481] spawnCubeProgrammer():  14:31:56:316 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:352 
+[2.481] spawnCubeProgrammer():  14:31:56:359 
+[2.481] spawnCubeProgrammer():  14:31:56:359 
+[2.481] spawnCubeProgrammer():  14:31:56:365 
+[2.481] spawnCubeProgrammer():  14:31:56:365 
+[2.481] spawnCubeProgrammer():  14:31:56:366 
+[2.481] spawnCubeProgrammer():  14:31:56:366 
+[2.481] spawnCubeProgrammer():  14:31:56:366 
+[2.481] spawnCubeProgrammer():  14:31:56:366 
+[2.481] spawnCubeProgrammer():   ------ Switching context ----- 
+[2.491] reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[2.493] Device_Initialise():  SWD frequency = 4000 kHz
+[2.493] Device_Initialise():  ST-LINK Firmware version : V2J33S0
+[2.493] Device_Initialise():  Device ID: 0x448
+[2.493] Device_Initialise():  PC: 0x8000620
+[2.494] Device_Initialise():  ST-LINK detects target voltage = 2.91 V
+[2.494] Device_Initialise():  ST-LINK device status: HALT_MODE
+[2.494] initServerContext():  ST-LINK device initialization OK
+[2.495] write():  <12> Tx: $OK#9a
+[2.495] read():  <12> Rx: $Pf=20060008#83
+[2.495] write():  <12> Tx: $OK#9a
+[2.495] read():  <12> Rx: $m80002fa,2#8c
+[2.495] handlePacket():  Reading 0x2 bytes of memory from addr 0x80002fa 
+[2.495] write():  <12> Tx: $8023#cd
+[2.495] read():  <12> Rx: $m80002fa,2#8c
+[2.495] handlePacket():  Reading 0x2 bytes of memory from addr 0x80002fa 
+[2.495] write():  <12> Tx: $8023#cd
+[2.496] read():  <12> Rx: $m8000620,4#2d
+[2.496] handlePacket():  Reading 0x4 bytes of memory from addr 0x8000620 
+[2.496] write():  <12> Tx: $0d488546#d7
+[2.496] read():  <12> Rx: $vKill;a410#33
+[2.496] handlePacket():  Hidden/Unsupported v-command 'vKill', see RSP for details
+[2.496] write():  <12> Tx: $#00
+[2.496] read():  <12> Rx: $k#6b
+[2.496] STM32_AppReset():  Enter STM32_AppReset() function 
+[2.600] STM32_AppReset():  NVIC_DFSR_REG = 0x0000000B
+[2.600] STM32_AppReset():  XPSR = 0xC1000000
+[2.600] read():  <12> Rx: $?#3f
+[2.600] write():  <12> Tx: $X09#c1
+[2.600] handleGDBConnection():  Wait after kill 1000 msec 
